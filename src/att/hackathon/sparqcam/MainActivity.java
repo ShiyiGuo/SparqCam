@@ -65,6 +65,7 @@ public class MainActivity extends Activity {
 		    		}else{
 		    			Toast.makeText(MainActivity.this, "Playback: " + uriVideo.getPath(),
 		    					Toast.LENGTH_LONG).show();
+		    			//videoviewPlay.setVisibility(visibility);
 		    			videoviewPlay.setVideoURI(uriVideo);
 		    			videoviewPlay.start();
 		    		}

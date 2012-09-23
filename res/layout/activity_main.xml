@@ -4,30 +4,19 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical"
 	android:background="@drawable/login_bg"	>
-	
-<!-- TextView
-  android:layout_width="fill_parent"
-  android:layout_height="wrap_content"
-  android:text="@string/hello"
-  />
-<Button
-  android:id="@+id/recording"
-  android:layout_width="fill_parent"
-  android:layout_height="wrap_content"
-  android:text="Recording Video using Intent"
-  />
-<Button
-  android:id="@+id/playback"
-  android:layout_width="fill_parent"
-  android:layout_height="wrap_content"
-  android:text="Playback"
-  /-->
-<VideoView
+<RelativeLayout android:id="@+id/videolayout"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_marginTop="70dip"
+    android:layout_height="400dip">
+ <VideoView
   android:id="@+id/videoview"
-  android:layout_width="fill_parent"
-  android:layout_height="400dip"
-  android:visibility="invisible"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:visibility="visible"
+  android:layout_centerInParent="true"
   />
+</RelativeLayout>
 <LinearLayout android:id="@+id/tools"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
@@ -38,33 +27,39 @@
         android:layout_width="wrap_content" 
         android:layout_height="wrap_content"
         android:background="@drawable/videos"
-        android:layout_weight="1" /> 
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="5dip"/> 
         
     <Button android:id="@+id/popular"
         android:layout_width="wrap_content" 
         android:layout_height="wrap_content"
         android:background="@drawable/popular"
-        android:layout_marginLeft="10dip"
-        android:layout_weight="1" /> 
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="5dip" /> 
         
     <Button android:id="@+id/recording"
         android:layout_width="wrap_content" 
         android:layout_height="wrap_content"
         android:background="@drawable/sparqcam"
-        android:layout_weight="1" />
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="5dip" />
     
     <Button android:id="@+id/friends"
         android:layout_width="wrap_content" 
         android:layout_height="wrap_content"
         android:background="@drawable/friends"
-        android:layout_marginRight="10dip"
-        android:layout_weight="1" />
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="5dip" />
     
     <Button android:id="@+id/activities"
         android:layout_width="wrap_content" 
         android:layout_height="wrap_content"
         android:background="@drawable/activity"
-        android:layout_weight="1" />
+        android:layout_marginLeft="20dip"
+        android:layout_marginBottom="5dip" />
     
     
 </LinearLayout>
