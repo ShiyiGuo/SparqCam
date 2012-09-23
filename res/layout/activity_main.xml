@@ -2,9 +2,10 @@
 <LinearLayout
 	android:layout_width="fill_parent" android:layout_height="fill_parent"
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:orientation="vertical">
+	android:orientation="vertical"
+	android:background="@drawable/login_bg"	>
 	
-<TextView
+<!-- TextView
   android:layout_width="fill_parent"
   android:layout_height="wrap_content"
   android:text="@string/hello"
@@ -20,10 +21,52 @@
   android:layout_width="fill_parent"
   android:layout_height="wrap_content"
   android:text="Playback"
-  />
+  /-->
 <VideoView
   android:id="@+id/videoview"
   android:layout_width="fill_parent"
-  android:layout_height="wrap_content"
+  android:layout_height="400dip"
+  android:visibility="invisible"
   />
+<LinearLayout android:id="@+id/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom" >
+    
+    <Button android:id="@+id/videos"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:background="@drawable/videos"
+        android:layout_weight="1" /> 
+        
+    <Button android:id="@+id/popular"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:background="@drawable/popular"
+        android:layout_marginLeft="10dip"
+        android:layout_weight="1" /> 
+        
+    <Button android:id="@+id/recording"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:background="@drawable/sparqcam"
+        android:layout_weight="1" />
+    
+    <Button android:id="@+id/friends"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:background="@drawable/friends"
+        android:layout_marginRight="10dip"
+        android:layout_weight="1" />
+    
+    <Button android:id="@+id/activities"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:background="@drawable/activity"
+        android:layout_weight="1" />
+    
+    
+</LinearLayout>
+    
 </LinearLayout>
